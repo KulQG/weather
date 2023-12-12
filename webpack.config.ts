@@ -3,6 +3,7 @@ import webpack from "webpack";
 import "webpack-dev-server";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const config: webpack.Configuration = {
   entry: { main: "./src/index.ts" },
@@ -15,7 +16,7 @@ const config: webpack.Configuration = {
   devServer: {
     static: path.resolve(__dirname, "./dist"),
     compress: true,
-    port: 8080,
+    port: 9999,
     hot: true,
 
     open: true,
@@ -27,6 +28,22 @@ const config: webpack.Configuration = {
         use: "ts-loader",
         exclude: "/node_modules/",
       },
+      {
+        test: /\.(png|jpe?g|gif|jp2|svg|webp)$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+        },
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
     ],
   },
   plugins: [
@@ -34,6 +51,9 @@ const config: webpack.Configuration = {
       template: "./src/index.html",
     }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
   ],
   resolve: {
     extensions: [".ts", ".js"],

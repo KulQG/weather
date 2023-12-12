@@ -1,0 +1,102 @@
+@use "./constants.scss" as *;
+
+body {
+  color: $color;
+  background-color: $bc;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  @include flex(column, baseline, center, 60px)
+}
+
+.main {
+  @extend %maxWidth;
+  padding: 70px 150px;
+  overflow: hidden;
+  @include flex(column, center, baseline, 50px);
+
+  .main-info-wrap {
+    @extend %maxWidth;
+    max-width: 1800px;
+    @include flex(row, center, space-between, 10px);
+
+    .main-info {
+      @include flex(row, center, flex-start, 15px);
+
+      .text-info {
+        @include flex(column, flex-start, center, 10px);
+
+        .celsius {
+          font-size: 10em;
+          font-weight: normal;
+        }
+      }
+
+      .type-of_wthr_img {
+        width: 50px;
+      }
+    }
+
+    .decorate-wrap {
+      max-width: 30%;
+      align-self: center;
+
+      img {
+        object-fit: contain;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.block {
+  // background-color: #1b2fc2;
+  // border-radius: 15px;
+  padding: 15px;
+  // // border: 1px solid #c21bbf;
+
+  background: rgba(17, 5, 98, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  .card {
+    @include flex(column, center, center, 5px)
+  }
+}
+
+.forecast-hours {
+  @extend %default-padding;
+
+  .forecast-hours-block {
+    @include flex(row, center, center, 30px);
+    flex-wrap: wrap;
+  }
+}
+
+.blocks { 
+  @extend %maxWidth;
+  @extend %default-padding;
+  @include flex(row, baseline, baseline, 30px);
+  flex-wrap: wrap;
+
+  .forecast {
+    @include flex(row, center, center, 10px);
+    flex-wrap: nowrap;
+  }
+}

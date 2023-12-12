@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-</head>
-<body>
-    <h1 class="title">Weather</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap"
+    />
+  </head>
+  <body>
+    <!-- <h1 class="title">Weather</h1> -->
+    <main class="main">
+      <div class="main-info-wrap">
+        <div class="main-info">
+          <div class="text-info">
+            <p class="city">Нижний Новгород</p>
+            <h1 class="celsius">-12</h1>
+            <p>Ощущается как <span class="feels-like">-10</span></p>
+            <p class="type-of-weather">Солнечно</p>
+          </div>
+          <img class="type-of_wthr_img" src="#" alt="Тип погоды" />
+        </div>
+        <div class="decorate-wrap">
+          <img class="decorate" src="#" alt="Погода" />
+        </div>
+      </div>
+    </main>
+    <section class="forecast-hours">
+      <div class="forecast-hours-block block">
+        <template class="template-hours-forecast-card">
+          <article class="card">
+            <img src="#" alt="Тип погоды" class="img" />
+            <h3 class="title"></h3>
+            <p class="subtitle"></p>
+          </article>
+        </template>
+      </div>
+    </section>
+    <section class="blocks">
+      <div class="forecast block">
+        <template class="template-forecast-card">
+          <article class="card">
+            <img src="#" alt="Тип погоды" class="img" />
+            <h3 class="title"></h3>
+            <p class="subtitle"></p>
+          </article>
+        </template>
+      </div>
+    </section>
+  </body>
 </html>
