@@ -36,12 +36,12 @@ export function getCurrentTime(optional?: {
   if (optional) {
     const curMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
     const day = String(currentDate.getDay()).padStart(2, "0");
-    if (optional.month) {
-      return { ...time, month: +curMonth };
+    if (optional.month && optional.day) {
+      return { ...time, day: +day, month: +curMonth };
     } else if (optional.day) {
       return { ...time, day: +day };
-    } else if (optional.month && optional.day) {
-      return { ...time, day: +day, month: +curMonth };
+    } else if (optional.month) {
+      return { ...time, month: +curMonth };
     }
   }
 
@@ -96,6 +96,6 @@ export function getTwentyFourHoursData(arr: IForecastData[])  {
   const day = []
 
   // 9 потому что данные приходят по 3 часа
-  for (let i = 1; i < 10; i++) day.push(arr[i])
+  for (let i = 1; i < 9; i++) day.push(arr[i])
   return day;
 }
