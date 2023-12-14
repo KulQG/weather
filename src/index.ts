@@ -24,15 +24,19 @@ import {
   convertUnixToRegular,
   getCurrentTime,
   getTimeOfDay,
-  getTwentyFourHoursData,
 } from "./utils/dateConverter";
+import {
+  divideIntoDaysData,
+  getMainDataOfADayArr,
+  getTwentyFourHoursData,
+} from "./utils/dataHandlers";
 import {
   getActualDecorateImage,
   getCurImageWeather,
 } from "./utils/actualImages";
 import { getForecastCard } from "./components/forecastCard";
 
-getMockData().then((data: IData) => {
+getData().then((data: IData) => {
   const typeOfWeather = data.weather[0];
 
   city.textContent = data.name;
@@ -66,13 +70,22 @@ getMockData().then((data: IData) => {
 
   decorateImage.src = getActualDecorateImage(
     typeOfWeather.main,
-    getCurrentTime({ month: true }),
+    getCurrentTime(),
     timeOfday
   );
 });
 
-getForecastMockData().then((data: IForecastApiResponse) => {
-  getTwentyFourHoursData(data.list).forEach((i) => {
+getForecastData().then((data: IForecastApiResponse) => {
+  const list = data.list;
+  getTwentyFourHoursData(list).forEach((i) => {
     hoursForecast.append(getForecastCard(i));
   });
+
+  divideIntoDaysData(list)
+    .map((i) => {
+      return getMainDataOfADayArr(i.data);
+    })
+    .forEach((i) => {
+      forecast.append(getForecastCard(i, "day"));
+    });
 });

@@ -19,40 +19,69 @@ body {
     max-width: 100%;
   }
 
-  @include flex(column, baseline, center, 60px)
+  p, span {
+    @extend %p;
+  }
+
+  @include flex($direction: column, $justify: center);
+  @include bodyGap;
 }
 
 .main {
   @extend %maxWidth;
-  padding: 70px 150px;
+  @include padding('main');
   overflow: hidden;
   @include flex(column, center, baseline, 50px);
+  z-index: 1;
 
   .main-info-wrap {
     @extend %maxWidth;
     max-width: 1800px;
-    @include flex(row, center, space-between, 10px);
+    @include flex($align: center, $justify: space-between, $gap: 10px);
 
+    @media screen and (max-width: $xs-width-content) {
+      flex-direction: column;
+      align-items: baseline;
+      gap: 20px;
+    }
     .main-info {
       @include flex(row, center, flex-start, 15px);
+      @media screen and (max-width: $s-width-content) {
+        gap: 0;
+      }
 
       .text-info {
         @include flex(column, flex-start, center, 10px);
+        @media screen and (max-width: $s-width-content) {
+          gap: 5px;
+        }
 
         .celsius {
-          font-size: 10em;
-          font-weight: normal;
+          @extend %h1
         }
       }
 
       .type-of_wthr_img {
         width: 50px;
+
+        @media screen and (max-width: $m-width-content) {
+          width: 35px;
+        }
       }
     }
 
     .decorate-wrap {
       max-width: 30%;
       align-self: center;
+
+      @media screen and (max-width: $xs-width-content) {
+        max-width: 80%;
+        z-index: 0;
+        opacity: .5;
+        position: absolute;
+        filter: blur(2px);
+        pointer-events: none;
+      }
 
       img {
         object-fit: contain;
@@ -63,40 +92,47 @@ body {
 }
 
 .block {
-  // background-color: #1b2fc2;
-  // border-radius: 15px;
   padding: 15px;
-  // // border: 1px solid #c21bbf;
+
+  @media screen  and (max-width: $s-width-content) {
+    padding: 10px;
+  }
 
   background: rgba(17, 5, 98, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cards-wrapper {
+  // flex-wrap: nowrap;
+  @include flex($gap: $cards-gap);
+  // display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  @media screen and (max-width: $m-width-content) {
+    overflow-x: auto;
+  }
 
   .card {
-    @include flex(column, center, center, 5px)
+    @include flex(column, center, center, 5px);
   }
 }
 
 .forecast-hours {
-  @extend %default-padding;
-
-  .forecast-hours-block {
-    @include flex(row, center, center, 30px);
-    flex-wrap: wrap;
-  }
+  @include padding;
 }
 
-.blocks { 
+.blocks {
   @extend %maxWidth;
-  @extend %default-padding;
+  @include padding;
   @include flex(row, baseline, baseline, 30px);
   flex-wrap: wrap;
 
   .forecast {
-    @include flex(row, center, center, 10px);
-    flex-wrap: nowrap;
+    @include flex(column, center, center, 10px);
   }
 }

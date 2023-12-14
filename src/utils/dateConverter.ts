@@ -1,4 +1,9 @@
-import { IForecastData, IFullTime, IGetTimeOfDay, TDateTimeString } from "./types";
+import {
+  IForecastData,
+  IFullTime,
+  IGetTimeOfDay,
+  TDateTimeString,
+} from "./types";
 
 export function convertUnixToRegular(unixTimestamp: number): IFullTime {
   const date = new Date(unixTimestamp * 1000);
@@ -22,30 +27,21 @@ export function convertUnixToRegular(unixTimestamp: number): IFullTime {
   };
 }
 
-export function getCurrentTime(optional?: {
-  month?: boolean;
-  day?: boolean;
-}): IGetTimeOfDay {
+export function getCurrentTime(): IGetTimeOfDay {
   const currentDate = new Date();
   const hours = String(currentDate.getHours()).padStart(2, "0");
   const minutes = String(currentDate.getMinutes()).padStart(2, "0");
   const seconds = String(currentDate.getSeconds()).padStart(2, "0");
+  const curMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
+  const day = currentDate.getDate();
 
-  const time = { hour: +hours, minutes: +minutes, seconds: +seconds };
-
-  if (optional) {
-    const curMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
-    const day = String(currentDate.getDay()).padStart(2, "0");
-    if (optional.month && optional.day) {
-      return { ...time, day: +day, month: +curMonth };
-    } else if (optional.day) {
-      return { ...time, day: +day };
-    } else if (optional.month) {
-      return { ...time, month: +curMonth };
-    }
-  }
-
-  return time;
+  return {
+    hour: +hours,
+    minutes: +minutes,
+    seconds: +seconds,
+    month: +curMonth,
+    day: day,
+  };
 }
 
 export function getTimeOfDay(
@@ -70,32 +66,26 @@ export function getTimeOfDay(
   }
 }
 
-export function getCurrentTimeFromTxtDt(date: TDateTimeString) {
-  const time = date.split(" ")[1];
-  const timeArr = time.split(":");
+export function getCurrentTimeFromTxtDt(
+  date: TDateTimeString | `${number}-${number}-${number}`
+) {
+  const [datePart, timePart] = date.split(" ");
+  const [year, month, day] = datePart.split("-");
+  const [hours, minutes, seconds] = timePart.split(":");
 
-  const datee = date.split(" ")[0];
-  const dateArr = datee.split("-");
+  if (hours || minutes || seconds) {
+    return {
+      hours,
+      minutes,
+      seconds,
+      fulltime: [hours, minutes, seconds],
 
-  return {
-    hours: timeArr[0],
-    minutes: timeArr[1],
-    seconds: timeArr[2],
-    fulltime: time,
-
-    day: dateArr[2],
-    month: dateArr[1],
-    year: dateArr[0],
-    fullDate: datee,
-  };
-}
-
-
-
-export function getTwentyFourHoursData(arr: IForecastData[])  {
-  const day = []
-
-  // 9 потому что данные приходят по 3 часа
-  for (let i = 1; i < 9; i++) day.push(arr[i])
-  return day;
+      day,
+      month,
+      year,
+      fullDate: [year, month, day],
+    };
+  } else {
+    return { day, month, year };
+  }
 }

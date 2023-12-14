@@ -11,7 +11,7 @@ export interface IGetTimeOfDay {
   minutes: number;
   seconds: number;
   day?: number;
-  month?: number
+  month?: number;
 }
 
 export interface IFullTime {
@@ -92,8 +92,10 @@ export interface IForecastApiResponse {
   };
 }
 
-export type TDateTimeString = `${number}-${number}-${number} ${number}:${number}:${number}`;
+export type TDateTimeString =
+  `${number}-${number}-${number} ${number}:${number}:${number}`;
 
+export type TDateString = `${number}-${number}-${number}`
 export interface IForecastData {
   dt: number;
   main: {
@@ -124,10 +126,15 @@ export interface IForecastData {
   visibility: number;
   pop: number;
   rain?: {
-    '3h': number;
+    "3h": number;
   };
   sys: {
     pod: string;
   };
   dt_txt: TDateTimeString;
 }
+
+export interface IDay {
+  day: TDateString;
+  data: IForecastData[];
+};

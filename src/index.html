@@ -28,7 +28,7 @@
       </div>
     </main>
     <section class="forecast-hours">
-      <div class="forecast-hours-block block">
+      <div class="forecast-hours-block block cards-wrapper">
         <template class="template-hours-forecast-card">
           <article class="card">
             <img src="#" alt="Тип погоды" class="img" />
@@ -40,13 +40,16 @@
     </section>
     <section class="blocks">
       <div class="forecast block">
-        <template class="template-forecast-card">
-          <article class="card">
-            <img src="#" alt="Тип погоды" class="img" />
-            <h3 class="title"></h3>
-            <p class="subtitle"></p>
-          </article>
-        </template>
+        <h2 class="section-title">Прогноз на 5 дней</h2>
+        <div class="forecast-block cards-wrapper">
+          <template class="template-forecast-card">
+            <article class="card">
+              <img src="#" alt="Тип погоды" class="img" />
+              <h3 class="title"></h3>
+              <p class="subtitle"></p>
+            </article>
+          </template>
+        </div>
       </div>
     </section>
   </body>
