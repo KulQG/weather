@@ -13,12 +13,12 @@ import {
   city,
   decorateImage,
   feelsLike,
-  forecast,
   hoursForecast,
   temp,
   withDegrees,
   typeOfWthr,
   typeOfWthrImg,
+  forecastWrap,
 } from "./utils/constants";
 import {
   convertUnixToRegular,
@@ -26,17 +26,17 @@ import {
   getTimeOfDay,
 } from "./utils/dateConverter";
 import {
-  divideIntoDaysData,
-  getMainDataOfADayArr,
-  getTwentyFourHoursData,
-} from "./utils/dataHandlers";
-import {
   getActualDecorateImage,
   getCurImageWeather,
 } from "./utils/actualImages";
-import { getForecastCard } from "./components/forecastCard";
+import {
+  ForecastCardDaily,
+  ForecastCardHourly,
+  getForecastCard,
+} from "./components/forecastCard";
+import Forecast from "./components/forecast";
 
-getData().then((data: IData) => {
+getMockData().then((data: IData) => {
   const typeOfWeather = data.weather[0];
 
   city.textContent = data.name;
@@ -76,16 +76,16 @@ getData().then((data: IData) => {
 });
 
 getForecastData().then((data: IForecastApiResponse) => {
-  const list = data.list;
-  getTwentyFourHoursData(list).forEach((i) => {
-    hoursForecast.append(getForecastCard(i));
+  const forecast = new Forecast(data.list);
+
+  forecast.getDataForHourlyForecast().forEach((item) => {
+    const card = new ForecastCardHourly(item).render();
+    hoursForecast.append(card);
   });
 
-  divideIntoDaysData(list)
-    .map((i) => {
-      return getMainDataOfADayArr(i.data);
-    })
-    .forEach((i) => {
-      forecast.append(getForecastCard(i, "day"));
-    });
+  const { allDays, mainInfo } = forecast.getDataForDailyForecast();
+  mainInfo.forEach((i, index) => {
+    const card = new ForecastCardDaily(i, allDays[index].data).getCard();
+    forecastWrap.append(card);
+  });
 });

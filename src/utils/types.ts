@@ -95,7 +95,7 @@ export interface IForecastApiResponse {
 export type TDateTimeString =
   `${number}-${number}-${number} ${number}:${number}:${number}`;
 
-export type TDateString = `${number}-${number}-${number}`
+export type TDateString = `${number}-${number}-${number}`;
 export interface IForecastData {
   dt: number;
   main: {
@@ -137,4 +137,26 @@ export interface IForecastData {
 export interface IDay {
   day: TDateString;
   data: IForecastData[];
-};
+}
+
+export type TTimeFromTxt =
+  | {
+      hours: string;
+      minutes: string;
+      seconds: string;
+      fulltime: string[];
+      day: string;
+      month: string;
+      year: string;
+      fullDate: string[];
+    }
+  | {
+      day: string;
+      month: string;
+      year: string;
+      hours?: undefined;
+      minutes?: undefined;
+      seconds?: undefined;
+      fulltime?: undefined;
+      fullDate?: undefined;
+    };

@@ -44,7 +44,7 @@ export const templateHoursForeacstCard = findSelector(
   "template-hours-forecast-card"
 ) as HTMLTemplateElement;
 
-export const forecast = findSelector("forecast-block");
+export const forecastWrap = findSelector("forecast-block");
 export const templateForecastCard = findSelector(
   "template-forecast-card"
 ) as HTMLTemplateElement;

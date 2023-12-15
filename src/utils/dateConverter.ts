@@ -3,6 +3,7 @@ import {
   IFullTime,
   IGetTimeOfDay,
   TDateTimeString,
+  TTimeFromTxt,
 } from "./types";
 
 export function convertUnixToRegular(unixTimestamp: number): IFullTime {
@@ -68,7 +69,7 @@ export function getTimeOfDay(
 
 export function getCurrentTimeFromTxtDt(
   date: TDateTimeString | `${number}-${number}-${number}`
-) {
+): TTimeFromTxt {
   const [datePart, timePart] = date.split(" ");
   const [year, month, day] = datePart.split("-");
   const [hours, minutes, seconds] = timePart.split(":");

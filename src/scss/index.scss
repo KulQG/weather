@@ -134,5 +134,9 @@ body {
 
   .forecast {
     @include flex(column, center, center, 10px);
+
+    .card {
+      cursor: pointer;
+    }
   }
 }
