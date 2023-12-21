@@ -252,6 +252,7 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
     });
     if (timeOfday === "night") {
         constants_1.body.style.backgroundColor = "#080D30";
+        console.log(constants_1.addInfoBtn);
         constants_1.addInfoBtn.style.backgroundColor = "#080D30";
     }
     constants_1.typeOfWthrImg.src = (0, actualImages_1.getCurImageWeather)(typeOfWeather.main, timeOfday);
