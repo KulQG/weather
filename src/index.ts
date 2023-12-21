@@ -36,7 +36,7 @@ import { ForecastCardDaily, ForecastCard } from "./components/forecastCard";
 import Forecast from "./components/forecast";
 // import icon from './images/icons/arrow.png';
 
-getMockData().then((data: IData) => {
+getData().then((data: IData) => {
   const typeOfWeather = data.weather[0];
 
   city.textContent = data.name;
@@ -96,7 +96,7 @@ getMockData().then((data: IData) => {
   });
 });
 
-getForecastMockData().then((data: IForecastApiResponse) => {
+getForecastData().then((data: IForecastApiResponse) => {
   const forecast = new Forecast(data.list);
 
   forecast.getDataForHourlyForecast().forEach((item) => {
