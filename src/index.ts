@@ -19,6 +19,9 @@ import {
   typeOfWthr,
   typeOfWthrImg,
   forecastWrap,
+  addInfoBtn,
+  infoBlockAdditional,
+  infoBlockPush,
 } from "./utils/constants";
 import {
   convertUnixToRegular,
@@ -29,12 +32,9 @@ import {
   getActualDecorateImage,
   getCurImageWeather,
 } from "./utils/actualImages";
-import {
-  ForecastCardDaily,
-  ForecastCardHourly,
-  getForecastCard,
-} from "./components/forecastCard";
+import { ForecastCardDaily, ForecastCard } from "./components/forecastCard";
 import Forecast from "./components/forecast";
+// import icon from './images/icons/arrow.png';
 
 getMockData().then((data: IData) => {
   const typeOfWeather = data.weather[0];
@@ -63,6 +63,7 @@ getMockData().then((data: IData) => {
 
   if (timeOfday === "night") {
     body!.style.backgroundColor = "#080D30";
+    addInfoBtn.style.backgroundColor = "#080D30";
   }
 
   typeOfWthrImg.src = getCurImageWeather(typeOfWeather.main, timeOfday);
@@ -73,19 +74,42 @@ getMockData().then((data: IData) => {
     getCurrentTime(),
     timeOfday
   );
+
+  addInfoBtn.addEventListener("click", () => {
+    if (!infoBlockAdditional.classList.contains("info_active")) {
+      if (infoBlockAdditional.classList.contains("info_disactive")) {
+        infoBlockAdditional.classList.remove("info_disactive");
+      }
+      infoBlockAdditional.classList.add("info_active");
+
+      infoBlockPush("pressure", data.main.pressure);
+      infoBlockPush("humidity", data.main.humidity);
+      infoBlockPush("sea_level", data.main.sea_level);
+      infoBlockPush("visibility", data.visibility);
+      infoBlockPush("speed", data.wind.speed);
+      infoBlockPush("sunrise", `${sunrise.hours}:${sunrise.minutes}`);
+      infoBlockPush("sunset", `${sunset.hours}:${sunset.minutes}`);
+    } else {
+      infoBlockAdditional.classList.remove("info_active");
+      infoBlockAdditional.classList.add("info_disactive");
+    }
+  });
 });
 
-getForecastData().then((data: IForecastApiResponse) => {
+getForecastMockData().then((data: IForecastApiResponse) => {
   const forecast = new Forecast(data.list);
 
   forecast.getDataForHourlyForecast().forEach((item) => {
-    const card = new ForecastCardHourly(item).render();
+    const card = new ForecastCard(item).render();
     hoursForecast.append(card);
   });
 
   const { allDays, mainInfo } = forecast.getDataForDailyForecast();
+  // console.log(forecast.getDataForDailyForecast())
   mainInfo.forEach((i, index) => {
-    const card = new ForecastCardDaily(i, allDays[index].data).getCard();
-    forecastWrap.append(card);
+    const card = new ForecastCardDaily(i, allDays[index].data);
+    forecastWrap.append(card.getCard());
   });
+
+  // console.log(allDays)
 });

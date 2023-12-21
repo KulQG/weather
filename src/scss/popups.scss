@@ -1,0 +1,63 @@
+@use "./constants.scss" as *;
+
+$popupWidth: 30em;
+$iconWidth: 20px;
+$borderRadius: 20px;
+
+.popups {
+  @extend %maxWidth;
+
+  .popup-wrap {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(17, 5, 98, 0.25);
+    cursor: pointer;
+
+    .popup {
+      border-radius: 20px;
+      cursor: default;
+      background-color: white;
+      padding: 20px;
+      width: 30em;
+      height: 20em;
+      z-index: 6;
+
+      & > .title {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: black;
+      }
+
+      .close-icon {
+        position: relative;
+        right: calc($iconWidth - $popupWidth + $iconWidth + $borderRadius);
+        cursor: pointer;
+        width: 20px;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+
+      .cards-wrapper {
+        background: $bc;
+        padding: 15px;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+  }
+
+  .popup-daily-wrap,
+  .popup-hourly-wrap {
+    @include flex($align: center, $justify: center);
+    display: none;
+
+    &_active {
+      @include flex($align: center, $justify: center);
+    }
+  }
+}

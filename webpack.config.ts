@@ -30,10 +30,7 @@ const config: webpack.Configuration = {
       },
       {
         test: /\.(png|jpe?g|gif|jp2|svg|webp)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-        },
+        type: 'asset/resource'
       },
       {
         test: /\.(scss|css)$/,
@@ -44,6 +41,10 @@ const config: webpack.Configuration = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(html)$/,
+        use: ['html-loader']
+      }
     ],
   },
   plugins: [

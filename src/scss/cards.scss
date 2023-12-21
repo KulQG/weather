@@ -1,0 +1,73 @@
+@use "./constants.scss" as *;
+
+.block {
+  padding: 15px;
+
+  @media screen and (max-width: $s-width-content) {
+    padding: 10px;
+  }
+
+  background: rgba(17, 5, 98, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cards-wrapper {
+  @include flex($gap: $cards-gap);
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  @media screen and (max-width: $m-width-content) {
+    overflow-x: auto;
+  }
+
+  .card {
+    @include flex(column, center, center, 5px);
+
+    &-forecast {
+      pointer-events: none;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    $height: 5px;
+    height: $height;
+    // width: -15px;
+    border-radius: 15px;
+    margin-top: -$height;
+    background-color: $bc;
+    opacity: 0;
+    position: relative;
+    top: 5px;
+    @media screen and (max-width: $s-width-content) {
+      display: none;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 15px;
+  }
+}
+
+.forecast-hours {
+  @include padding;
+}
+
+.blocks {
+  @extend %maxWidth;
+  @include padding;
+  @include flex(row, baseline, baseline, 30px);
+  flex-wrap: wrap;
+
+  .forecast {
+    @include flex(column, center, center, 10px);
+
+    .card {
+      cursor: pointer;
+    }
+  }
+}

@@ -39,23 +39,29 @@ export const typeOfWthrImg = findSelector(
 ) as HTMLImageElement;
 export const decorateImage = findSelector("decorate") as HTMLImageElement;
 
+const addInfoBlock = findSelector("additional-info")!;
+export const addInfoBtn: HTMLElement = addInfoBlock.querySelector(".btn")!;
+export const infoBlockAdditional = addInfoBlock.querySelector(".info")!;
+
 export const hoursForecast = findSelector("forecast-hours-block");
-export const templateHoursForeacstCard = findSelector(
-  "template-hours-forecast-card"
-) as HTMLTemplateElement;
 
 export const forecastWrap = findSelector("forecast-block");
 export const templateForecastCard = findSelector(
   "template-forecast-card"
 ) as HTMLTemplateElement;
 
+export const popupWrapDaily = findSelector("popup-daily-wrap");
+export const popupWrapCurrentWeather = findSelector("popup-hourly-wrap");
+export const popupHourly = findSelector("popup-hourly");
+export const popupDaily = findSelector("popup-daily");
+
 export const pushSrcToImg = (src: string) => {
   return `<%=require('${src}')%>`;
 };
 
 export const withDegrees = (temp: number) => {
-  return `${Math.round(temp)}°`
-}
+  return `${Math.round(temp)}°`;
+};
 
 export const getIcons = {
   clear: clearSun,
@@ -77,3 +83,7 @@ export const getImages = {
   cloudy: bigCloudy,
   default: defaultBig,
 };
+
+export function infoBlockPush (className: string, data: any) {
+  infoBlockAdditional.querySelector(`.${className}`)!.textContent = String(data);
+}

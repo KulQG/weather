@@ -1,4 +1,3 @@
-import { forecastWrap, hoursForecast } from "../utils/constants";
 import {
   getCurrentTime,
   getCurrentTimeFromTxtDt,
@@ -45,6 +44,7 @@ export default class Forecast {
       result.push({ day: key as TDateString, data: daysData[key] });
     }
 
+    // console.log(result)
     return result;
   }
 

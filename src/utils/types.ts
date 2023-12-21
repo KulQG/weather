@@ -96,6 +96,7 @@ export type TDateTimeString =
   `${number}-${number}-${number} ${number}:${number}:${number}`;
 
 export type TDateString = `${number}-${number}-${number}`;
+
 export interface IForecastData {
   dt: number;
   main: {
