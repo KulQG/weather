@@ -2,216 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/images/cloud.png":
-/*!******************************!*\
-  !*** ./src/images/cloud.png ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "cloud.png");
-
-/***/ }),
-
-/***/ "./src/images/default.png":
-/*!********************************!*\
-  !*** ./src/images/default.png ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "default.png");
-
-/***/ }),
-
-/***/ "./src/images/icons/cloudy_moon.png":
-/*!******************************************!*\
-  !*** ./src/images/icons/cloudy_moon.png ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "cloudy_moon.png");
-
-/***/ }),
-
-/***/ "./src/images/icons/cloudy_sun.svg":
-/*!*****************************************!*\
-  !*** ./src/images/icons/cloudy_sun.svg ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "cloudy_sun.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/moon.svg":
-/*!***********************************!*\
-  !*** ./src/images/icons/moon.svg ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "moon.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/over_cloudy_sun.svg":
-/*!**********************************************!*\
-  !*** ./src/images/icons/over_cloudy_sun.svg ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "over_cloudy_sun.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/rainy.svg":
-/*!************************************!*\
-  !*** ./src/images/icons/rainy.svg ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "rainy.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/snowy.svg":
-/*!************************************!*\
-  !*** ./src/images/icons/snowy.svg ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "snowy.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/sunny.svg":
-/*!************************************!*\
-  !*** ./src/images/icons/sunny.svg ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "sunny.svg");
-
-/***/ }),
-
-/***/ "./src/images/icons/thunder.svg":
-/*!**************************************!*\
-  !*** ./src/images/icons/thunder.svg ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "thunder.svg");
-
-/***/ }),
-
-/***/ "./src/images/moon.png":
-/*!*****************************!*\
-  !*** ./src/images/moon.png ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "moon.png");
-
-/***/ }),
-
-/***/ "./src/images/rain.png":
-/*!*****************************!*\
-  !*** ./src/images/rain.png ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "rain.png");
-
-/***/ }),
-
-/***/ "./src/images/snow.png":
-/*!*****************************!*\
-  !*** ./src/images/snow.png ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "snow.png");
-
-/***/ }),
-
-/***/ "./src/images/sun.png":
-/*!****************************!*\
-  !*** ./src/images/sun.png ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "sun.png");
-
-/***/ }),
-
-/***/ "./src/images/thunder.png":
-/*!********************************!*\
-  !*** ./src/images/thunder.png ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "thunder.png");
-
-/***/ }),
-
 /***/ "./node_modules/normalize.css/normalize.css":
 /*!**************************************************!*\
   !*** ./node_modules/normalize.css/normalize.css ***!
@@ -236,6 +26,86 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/forecast.ts":
+/*!************************************!*\
+  !*** ./src/components/forecast.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const dateConverter_1 = __webpack_require__(/*! ../utils/dateConverter */ "./src/utils/dateConverter.ts");
+class Forecast {
+    constructor(list) {
+        this.list = list;
+    }
+    getTwentyFourHoursData() {
+        const day = [];
+        // 9 потому что данные приходят по 3 часа
+        for (let i = 1; i < 9; i++)
+            day.push(this.list[i]);
+        return day;
+    }
+    divideIntoDaysData() {
+        const daysData = {};
+        const currentDate = (0, dateConverter_1.getCurrentTime)().day;
+        const sinceTommorowArr = this.list.filter((i) => {
+            return +(0, dateConverter_1.getCurrentTimeFromTxtDt)(i.dt_txt).day > currentDate
+                ? true
+                : false;
+        });
+        sinceTommorowArr.forEach((forecast) => {
+            const { year, month, day } = (0, dateConverter_1.getCurrentTimeFromTxtDt)(forecast.dt_txt);
+            const key = `${+year}-${+month}-${+day}`;
+            if (!daysData[key]) {
+                daysData[key] = [];
+            }
+            daysData[key].push(forecast);
+        });
+        const result = [];
+        for (const key in daysData) {
+            result.push({ day: key, data: daysData[key] });
+        }
+        // console.log(result)
+        return result;
+    }
+    getMainDataOfADay(arr) {
+        let result;
+        arr.forEach((i) => {
+            const curHour = +(0, dateConverter_1.getCurrentTimeFromTxtDt)(i.dt_txt).hours;
+            if (curHour === 12) {
+                result = i;
+            }
+            else if (curHour < 12 &&
+                (result === undefined ||
+                    curHour > +(0, dateConverter_1.getCurrentTimeFromTxtDt)(result.dt_txt).hours)) {
+                result = i;
+            }
+            else if (curHour > 12 &&
+                (result === undefined ||
+                    curHour < +(0, dateConverter_1.getCurrentTimeFromTxtDt)(result.dt_txt).hours)) {
+                result = i;
+            }
+        });
+        return result;
+    }
+    getDataForHourlyForecast() {
+        return this.getTwentyFourHoursData();
+    }
+    getDataForDailyForecast() {
+        return {
+            allDays: this.divideIntoDaysData(),
+            mainInfo: this.divideIntoDaysData().map((i) => {
+                return this.getMainDataOfADay(i.data);
+            }),
+        };
+    }
+}
+exports["default"] = Forecast;
+
+
+/***/ }),
+
 /***/ "./src/components/forecastCard.ts":
 /*!****************************************!*\
   !*** ./src/components/forecastCard.ts ***!
@@ -244,36 +114,186 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getForecastCard = void 0;
-var actualImages_1 = __webpack_require__(/*! ../utils/actualImages */ "./src/utils/actualImages.ts");
-var constants_1 = __webpack_require__(/*! ../utils/constants */ "./src/utils/constants.ts");
-var dateConverter_1 = __webpack_require__(/*! ../utils/dateConverter */ "./src/utils/dateConverter.ts");
-function getForecastCard(data, type) {
-    if (type === void 0) { type = "hours"; }
-    var typeOfWeather = data.weather[0].main;
-    var template = document.importNode(type === "hours"
-        ? constants_1.templateHoursForeacstCard.content
-        : constants_1.templateForecastCard.content, true);
-    var cardElement = template.querySelector(".card");
-    var imageElement = cardElement.querySelector(".img");
-    cardElement.querySelector(".title").textContent = (0, constants_1.withDegrees)(data.main.temp);
-    imageElement.src = (0, actualImages_1.getCurImageWeather)(typeOfWeather);
-    imageElement.alt = typeOfWeather;
-    var time = (0, dateConverter_1.getCurrentTimeFromTxtDt)(data.dt_txt);
-    var subtitle = cardElement.querySelector(".subtitle");
-    if (type === "hours") {
-        var curHour = time.hours;
-        var curMinutes = time.minutes;
-        subtitle.textContent = "".concat(curHour, ":").concat(curMinutes);
+exports.ForecastCardDaily = exports.ForecastCard = void 0;
+const actualImages_1 = __webpack_require__(/*! ../utils/actualImages */ "./src/utils/actualImages.ts");
+const constants_1 = __webpack_require__(/*! ../utils/constants */ "./src/utils/constants.ts");
+const dateConverter_1 = __webpack_require__(/*! ../utils/dateConverter */ "./src/utils/dateConverter.ts");
+const popup_1 = __webpack_require__(/*! ./popup */ "./src/components/popup.ts");
+class ForecastCard {
+    constructor(data) {
+        this.data = data;
+        this.typeOfWeather = this.data.weather[0].main;
+        this.time = (0, dateConverter_1.getCurrentTimeFromTxtDt)(this.data.dt_txt);
+        this.opened = false;
+        this._template = document.importNode(constants_1.templateForecastCard.content, true);
+        this.cardElement = this._template.querySelector(".card");
+        this._imageElement = this.cardElement.querySelector(".img");
+        this._title = this.cardElement.querySelector(".title");
+        this._subtitle = this.cardElement.querySelector(".subtitle");
     }
-    else {
-        var curDay = time.day;
-        var curMonth = time.month;
-        subtitle.textContent = "".concat(curDay, ".").concat(curMonth);
+    toggleState() {
+        this.opened = !this.opened;
     }
-    return cardElement;
+    render() {
+        this._title.textContent = (0, constants_1.withDegrees)(this.data.main.temp);
+        this._imageElement.src = (0, actualImages_1.getCurImageWeather)(this.typeOfWeather);
+        this._imageElement.alt = this.typeOfWeather;
+        const { hours, minutes } = this.time;
+        this._subtitle.textContent = `${hours}:${minutes}`;
+        return this.cardElement;
+    }
 }
-exports.getForecastCard = getForecastCard;
+exports.ForecastCard = ForecastCard;
+class ForecastCardDaily extends ForecastCard {
+    constructor(data, dayInfo) {
+        super(data);
+        this.dayInfo = dayInfo;
+        this.getEventListeners();
+        // console.log(dayInfo)
+    }
+    getEventListeners() {
+        this.cardElement.addEventListener("click", () => {
+            this.toggleState();
+            (0, popup_1.getPopupOfDay)(this.dayInfo, this.time);
+            // this.getCard();
+        });
+    }
+    getCard() {
+        this._title.textContent = !this.opened
+            ? (0, constants_1.withDegrees)(this.data.main.temp)
+            : "Ай!";
+        this._imageElement.src = (0, actualImages_1.getCurImageWeather)(this.typeOfWeather);
+        this._imageElement.alt = this.typeOfWeather;
+        const { day, month } = this.time;
+        this._subtitle.textContent = `${day}.${month}`;
+        return this.cardElement;
+    }
+}
+exports.ForecastCardDaily = ForecastCardDaily;
+
+
+/***/ }),
+
+/***/ "./src/components/popup.ts":
+/*!*********************************!*\
+  !*** ./src/components/popup.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getPopupOfDay = void 0;
+const constants_1 = __webpack_require__(/*! ../utils/constants */ "./src/utils/constants.ts");
+const forecastCard_1 = __webpack_require__(/*! ./forecastCard */ "./src/components/forecastCard.ts");
+function getPopupOfDay(data, time) {
+    const activeStyle = "popup-daily-wrap_active";
+    const closeIcon = constants_1.popupDaily.querySelector(".close-icon");
+    constants_1.popupWrapDaily.classList.add(activeStyle);
+    constants_1.popupDaily.querySelector(".title").textContent = `Погода на ${time.day}.${time.month}`;
+    const dataWrapper = constants_1.popupDaily.querySelector(".data");
+    data.forEach((i) => {
+        dataWrapper.append(new forecastCard_1.ForecastCard(i).render());
+    });
+    function close(e) {
+        if (e.currentTarget === e.target) {
+            constants_1.popupWrapDaily.classList.remove(activeStyle);
+            dataWrapper.querySelectorAll(".card").forEach((i) => {
+                dataWrapper.removeChild(i);
+            });
+            closeIcon.removeEventListener("click", close);
+            constants_1.popupWrapDaily.removeEventListener("click", close);
+        }
+    }
+    closeIcon.addEventListener("click", close);
+    constants_1.popupWrapDaily.addEventListener("click", close);
+}
+exports.getPopupOfDay = getPopupOfDay;
+
+
+/***/ }),
+
+/***/ "./src/index.ts":
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
+__webpack_require__(/*! ./scss/index.scss */ "./src/scss/index.scss");
+// import './scss/blocks/main.scss';
+const api_1 = __webpack_require__(/*! ./utils/api */ "./src/utils/api.ts");
+const constants_1 = __webpack_require__(/*! ./utils/constants */ "./src/utils/constants.ts");
+const dateConverter_1 = __webpack_require__(/*! ./utils/dateConverter */ "./src/utils/dateConverter.ts");
+const actualImages_1 = __webpack_require__(/*! ./utils/actualImages */ "./src/utils/actualImages.ts");
+const forecastCard_1 = __webpack_require__(/*! ./components/forecastCard */ "./src/components/forecastCard.ts");
+const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast */ "./src/components/forecast.ts"));
+// import icon from './images/icons/arrow.png';
+(0, api_1.getData)().then((data) => {
+    const typeOfWeather = data.weather[0];
+    constants_1.city.textContent = data.name;
+    constants_1.temp.textContent = (0, constants_1.withDegrees)(data.main.temp);
+    constants_1.typeOfWthr.textContent = `${typeOfWeather.description}`;
+    constants_1.feelsLike.textContent = (0, constants_1.withDegrees)(data.main.feels_like);
+    const sunrise = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunrise);
+    const sunset = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunset);
+    const timeOfday = (0, dateConverter_1.getTimeOfDay)((0, dateConverter_1.getCurrentTime)(), {
+        hour: +sunrise.hours,
+        minutes: +sunrise.minutes,
+        seconds: +sunrise.seconds,
+    }, {
+        hour: +sunset.hours,
+        minutes: +sunset.minutes,
+        seconds: +sunset.seconds,
+    });
+    if (timeOfday === "night") {
+        constants_1.body.style.backgroundColor = "#080D30";
+        constants_1.addInfoBtn.style.backgroundColor = "#080D30";
+    }
+    constants_1.typeOfWthrImg.src = (0, actualImages_1.getCurImageWeather)(typeOfWeather.main, timeOfday);
+    constants_1.typeOfWthrImg.alt = typeOfWeather.description;
+    constants_1.decorateImage.src = (0, actualImages_1.getActualDecorateImage)(typeOfWeather.main, (0, dateConverter_1.getCurrentTime)(), timeOfday);
+    console.log(data);
+    constants_1.addInfoBtn.addEventListener("click", () => {
+        if (!constants_1.infoBlockAdditional.classList.contains("info_active")) {
+            if (constants_1.infoBlockAdditional.classList.contains("info_disactive")) {
+                constants_1.infoBlockAdditional.classList.remove("info_disactive");
+                constants_1.arrowAddIcon.classList.remove("icon-arrow_active");
+            }
+            constants_1.infoBlockAdditional.classList.add("info_active");
+            constants_1.arrowAddIcon.classList.add("icon-arrow_active");
+            (0, constants_1.infoBlockPush)("pressure", data.main.pressure);
+            (0, constants_1.infoBlockPush)("humidity", data.main.humidity);
+            (0, constants_1.infoBlockPush)("visibility", data.visibility);
+            (0, constants_1.infoBlockPush)("speed", data.wind.speed);
+            (0, constants_1.infoBlockPush)("sunrise", `${sunrise.hours}:${sunrise.minutes}`);
+            (0, constants_1.infoBlockPush)("sunset", `${sunset.hours}:${sunset.minutes}`);
+        }
+        else {
+            constants_1.infoBlockAdditional.classList.remove("info_active");
+            constants_1.infoBlockAdditional.classList.add("info_disactive");
+            constants_1.arrowAddIcon.classList.remove("icon-arrow_active");
+        }
+    });
+});
+(0, api_1.getForecastData)().then((data) => {
+    const forecast = new forecast_1.default(data.list);
+    forecast.getDataForHourlyForecast().forEach((item) => {
+        const card = new forecastCard_1.ForecastCard(item).render();
+        constants_1.hoursForecast.append(card);
+    });
+    const { allDays, mainInfo } = forecast.getDataForDailyForecast();
+    // console.log(forecast.getDataForDailyForecast())
+    mainInfo.forEach((i, index) => {
+        const card = new forecastCard_1.ForecastCardDaily(i, allDays[index].data);
+        constants_1.forecastWrap.append(card.getCard());
+    });
+    // console.log(allDays)
+});
 
 
 /***/ }),
@@ -287,9 +307,8 @@ exports.getForecastCard = getForecastCard;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getActualDecorateImage = exports.getCurImageWeather = void 0;
-var constants_1 = __webpack_require__(/*! ./constants */ "./src/utils/constants.ts");
-var getCurImageWeather = function (weather, currentTime) {
-    if (currentTime === void 0) { currentTime = "day"; }
+const constants_1 = __webpack_require__(/*! ./constants */ "./src/utils/constants.ts");
+const getCurImageWeather = (weather, currentTime = "day") => {
     switch (weather) {
         case "Clear": {
             return (currentTime =  true ? constants_1.getIcons.clear : 0);
@@ -312,7 +331,7 @@ var getCurImageWeather = function (weather, currentTime) {
     }
 };
 exports.getCurImageWeather = getCurImageWeather;
-var getActualDecorateImage = function (weather, currentTime, timeOfDay) {
+const getActualDecorateImage = (weather, currentTime, timeOfDay) => {
     switch (weather) {
         case "Rain": {
             return constants_1.getImages.rain;
@@ -328,7 +347,7 @@ var getActualDecorateImage = function (weather, currentTime, timeOfDay) {
             return constants_1.getImages.cloudy;
         }
         default: {
-            var month = currentTime.month;
+            const month = currentTime.month;
             console.log(month);
             if (month < 3 && month > 11) {
                 return constants_1.getImages.snow;
@@ -358,84 +377,49 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (g && (g = 0, op[0] && (_ = 0)), _) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getForecastMockData = exports.getMockData = exports.getForecastData = exports.getData = void 0;
-var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs"));
-var constants_1 = __webpack_require__(/*! ./constants */ "./src/utils/constants.ts");
-var mocks_1 = __webpack_require__(/*! ./mocks */ "./src/utils/mocks.ts");
-var getData = function () { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        return [2 /*return*/, axios_1.default
-                .get(constants_1.address)
-                .then(function (res) {
-                if (res)
-                    return res.data;
-            })
-                .catch(function (err) {
-                console.log(err);
-            })];
+const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs"));
+const constants_1 = __webpack_require__(/*! ./constants */ "./src/utils/constants.ts");
+const mocks_1 = __webpack_require__(/*! ./mocks */ "./src/utils/mocks.ts");
+const getData = () => __awaiter(void 0, void 0, void 0, function* () {
+    return axios_1.default
+        .get(constants_1.address)
+        .then((res) => {
+        if (res)
+            return res.data;
+    })
+        .catch((err) => {
+        console.log(err);
     });
-}); };
+});
 exports.getData = getData;
-var getForecastData = function () { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        return [2 /*return*/, axios_1.default
-                .get(constants_1.forecastAdress)
-                .then(function (res) {
-                if (res)
-                    return res.data;
-                else
-                    throw new Error();
-            })
-                .catch(function (err) { return console.log(err); })];
-    });
-}); };
+const getForecastData = () => __awaiter(void 0, void 0, void 0, function* () {
+    return axios_1.default
+        .get(constants_1.forecastAdress)
+        .then((res) => {
+        if (res)
+            return res.data;
+        else
+            throw new Error();
+    })
+        .catch((err) => console.log(err));
+});
 exports.getForecastData = getForecastData;
-var getMockData = function () { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        return [2 /*return*/, new Promise(function (resolve, reject) {
-                resolve(mocks_1.weatherData);
-            })];
+const getMockData = () => __awaiter(void 0, void 0, void 0, function* () {
+    return new Promise((resolve, reject) => {
+        resolve(mocks_1.weatherData);
     });
-}); };
+});
 exports.getMockData = getMockData;
-var getForecastMockData = function () { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        return [2 /*return*/, new Promise(function (resolve, reject) {
-                resolve(mocks_1.mockForecast);
-            })];
+const getForecastMockData = () => __awaiter(void 0, void 0, void 0, function* () {
+    return new Promise((resolve, reject) => {
+        resolve(mocks_1.mockForecast);
     });
-}); };
+});
 exports.getForecastMockData = getForecastMockData;
 
 
@@ -452,33 +436,33 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getImages = exports.getIcons = exports.withDegrees = exports.pushSrcToImg = exports.templateForecastCard = exports.forecast = exports.templateHoursForeacstCard = exports.hoursForecast = exports.decorateImage = exports.typeOfWthrImg = exports.feelsLike = exports.typeOfWthr = exports.temp = exports.city = exports.body = exports.findSelector = exports.forecastAdress = exports.address = void 0;
-var cloudy_moon_png_1 = __importDefault(__webpack_require__(/*! ../images/icons/cloudy_moon.png */ "./src/images/icons/cloudy_moon.png"));
-var sunny_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/sunny.svg */ "./src/images/icons/sunny.svg"));
-var moon_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/moon.svg */ "./src/images/icons/moon.svg"));
-var cloudy_sun_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/cloudy_sun.svg */ "./src/images/icons/cloudy_sun.svg"));
-var thunder_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/thunder.svg */ "./src/images/icons/thunder.svg"));
-var rainy_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/rainy.svg */ "./src/images/icons/rainy.svg"));
-var snowy_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/snowy.svg */ "./src/images/icons/snowy.svg"));
-var over_cloudy_sun_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/over_cloudy_sun.svg */ "./src/images/icons/over_cloudy_sun.svg"));
-var rain_png_1 = __importDefault(__webpack_require__(/*! ../images/rain.png */ "./src/images/rain.png"));
-var sun_png_1 = __importDefault(__webpack_require__(/*! ../images/sun.png */ "./src/images/sun.png"));
-var thunder_png_1 = __importDefault(__webpack_require__(/*! ../images/thunder.png */ "./src/images/thunder.png"));
-var snow_png_1 = __importDefault(__webpack_require__(/*! ../images/snow.png */ "./src/images/snow.png"));
-var moon_png_1 = __importDefault(__webpack_require__(/*! ../images/moon.png */ "./src/images/moon.png"));
-var default_png_1 = __importDefault(__webpack_require__(/*! ../images/default.png */ "./src/images/default.png"));
-var cloud_png_1 = __importDefault(__webpack_require__(/*! ../images/cloud.png */ "./src/images/cloud.png"));
-var currentCoordinates = {
+exports.infoBlockPush = exports.getImages = exports.getIcons = exports.withDegrees = exports.pushSrcToImg = exports.popupDaily = exports.popupHourly = exports.popupWrapCurrentWeather = exports.popupWrapDaily = exports.templateForecastCard = exports.forecastWrap = exports.hoursForecast = exports.arrowAddIcon = exports.infoBlockAdditional = exports.addInfoBtn = exports.decorateImage = exports.typeOfWthrImg = exports.feelsLike = exports.typeOfWthr = exports.temp = exports.city = exports.body = exports.findSelector = exports.forecastAdress = exports.address = void 0;
+const cloudy_moon_png_1 = __importDefault(__webpack_require__(/*! ../images/icons/cloudy_moon.png */ "./src/images/icons/cloudy_moon.png"));
+const sunny_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/sunny.svg */ "./src/images/icons/sunny.svg"));
+const moon_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/moon.svg */ "./src/images/icons/moon.svg"));
+const cloudy_sun_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/cloudy_sun.svg */ "./src/images/icons/cloudy_sun.svg"));
+const thunder_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/thunder.svg */ "./src/images/icons/thunder.svg"));
+const rainy_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/rainy.svg */ "./src/images/icons/rainy.svg"));
+const snowy_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/snowy.svg */ "./src/images/icons/snowy.svg"));
+const over_cloudy_sun_svg_1 = __importDefault(__webpack_require__(/*! ../images/icons/over_cloudy_sun.svg */ "./src/images/icons/over_cloudy_sun.svg"));
+const rain_png_1 = __importDefault(__webpack_require__(/*! ../images/rain.png */ "./src/images/rain.png"));
+const sun_png_1 = __importDefault(__webpack_require__(/*! ../images/sun.png */ "./src/images/sun.png"));
+const thunder_png_1 = __importDefault(__webpack_require__(/*! ../images/thunder.png */ "./src/images/thunder.png"));
+const snow_png_1 = __importDefault(__webpack_require__(/*! ../images/snow.png */ "./src/images/snow.png"));
+const moon_png_1 = __importDefault(__webpack_require__(/*! ../images/moon.png */ "./src/images/moon.png"));
+const default_png_1 = __importDefault(__webpack_require__(/*! ../images/default.png */ "./src/images/default.png"));
+const cloud_png_1 = __importDefault(__webpack_require__(/*! ../images/cloud.png */ "./src/images/cloud.png"));
+let currentCoordinates = {
     lat: "56.3287",
     lon: "44.002",
 };
-var key = "48474b8ff8a6184373bfde339a8a662b";
-var mainAdress = "https://api.openweathermap.org/data/2.5/";
-var adressData = "lat=".concat(currentCoordinates.lat, "&lon=").concat(currentCoordinates.lon, "&units=metric&lang=ru&appid=").concat(key);
-exports.address = "".concat(mainAdress, "weather?").concat(adressData);
-exports.forecastAdress = "".concat(mainAdress, "forecast?").concat(adressData);
-var findSelector = function (selector) {
-    return document.querySelector(".".concat(selector));
+const key = "48474b8ff8a6184373bfde339a8a662b";
+const mainAdress = "https://api.openweathermap.org/data/2.5/";
+const adressData = `lat=${currentCoordinates.lat}&lon=${currentCoordinates.lon}&units=metric&lang=ru&appid=${key}`;
+exports.address = `${mainAdress}weather?${adressData}`;
+exports.forecastAdress = `${mainAdress}forecast?${adressData}`;
+const findSelector = (selector) => {
+    return document.querySelector(`.${selector}`);
 };
 exports.findSelector = findSelector;
 exports.body = document.body;
@@ -488,16 +472,23 @@ exports.typeOfWthr = (0, exports.findSelector)("type-of-weather");
 exports.feelsLike = (0, exports.findSelector)("feels-like");
 exports.typeOfWthrImg = (0, exports.findSelector)("type-of_wthr_img");
 exports.decorateImage = (0, exports.findSelector)("decorate");
+const addInfoBlock = (0, exports.findSelector)("additional-info");
+exports.addInfoBtn = addInfoBlock.querySelector(".btn");
+exports.infoBlockAdditional = addInfoBlock.querySelector(".info");
+exports.arrowAddIcon = exports.addInfoBtn.querySelector('.icon-arrow');
 exports.hoursForecast = (0, exports.findSelector)("forecast-hours-block");
-exports.templateHoursForeacstCard = (0, exports.findSelector)("template-hours-forecast-card");
-exports.forecast = (0, exports.findSelector)("forecast-block");
+exports.forecastWrap = (0, exports.findSelector)("forecast-block");
 exports.templateForecastCard = (0, exports.findSelector)("template-forecast-card");
-var pushSrcToImg = function (src) {
-    return "<%=require('".concat(src, "')%>");
+exports.popupWrapDaily = (0, exports.findSelector)("popup-daily-wrap");
+exports.popupWrapCurrentWeather = (0, exports.findSelector)("popup-hourly-wrap");
+exports.popupHourly = (0, exports.findSelector)("popup-hourly");
+exports.popupDaily = (0, exports.findSelector)("popup-daily");
+const pushSrcToImg = (src) => {
+    return `<%=require('${src}')%>`;
 };
 exports.pushSrcToImg = pushSrcToImg;
-var withDegrees = function (temp) {
-    return "".concat(Math.round(temp), "\u00B0");
+const withDegrees = (temp) => {
+    return `${Math.round(temp)}°`;
 };
 exports.withDegrees = withDegrees;
 exports.getIcons = {
@@ -519,71 +510,10 @@ exports.getImages = {
     cloudy: cloud_png_1.default,
     default: default_png_1.default,
 };
-
-
-/***/ }),
-
-/***/ "./src/utils/dataHandlers.ts":
-/*!***********************************!*\
-  !*** ./src/utils/dataHandlers.ts ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getMainDataOfADayArr = exports.divideIntoDaysData = exports.getTwentyFourHoursData = void 0;
-var dateConverter_1 = __webpack_require__(/*! ./dateConverter */ "./src/utils/dateConverter.ts");
-function getTwentyFourHoursData(arr) {
-    var day = [];
-    // 9 потому что данные приходят по 3 часа
-    for (var i = 1; i < 9; i++)
-        day.push(arr[i]);
-    return day;
+function infoBlockPush(className, data) {
+    exports.infoBlockAdditional.querySelector(`.${className}`).textContent = String(data);
 }
-exports.getTwentyFourHoursData = getTwentyFourHoursData;
-function divideIntoDaysData(arr) {
-    var daysData = {};
-    var currentDate = (0, dateConverter_1.getCurrentTime)().day;
-    var sinceTommorowArr = arr.filter(function (i) {
-        return +(0, dateConverter_1.getCurrentTimeFromTxtDt)(i.dt_txt).day > currentDate ? true : false;
-    });
-    sinceTommorowArr.forEach(function (forecast) {
-        var _a = (0, dateConverter_1.getCurrentTimeFromTxtDt)(forecast.dt_txt), year = _a.year, month = _a.month, day = _a.day;
-        var key = "".concat(+year, "-").concat(+month, "-").concat(+day);
-        if (!daysData[key]) {
-            daysData[key] = [];
-        }
-        daysData[key].push(forecast);
-    });
-    var result = [];
-    for (var key in daysData) {
-        result.push({ day: key, data: daysData[key] });
-    }
-    return result;
-}
-exports.divideIntoDaysData = divideIntoDaysData;
-function getMainDataOfADayArr(arr) {
-    var result;
-    arr.forEach(function (i) {
-        var curHour = +(0, dateConverter_1.getCurrentTimeFromTxtDt)(i.dt_txt).hours;
-        if (curHour === 12) {
-            result = i;
-        }
-        else if (curHour < 12 &&
-            (result === undefined ||
-                curHour > +(0, dateConverter_1.getCurrentTimeFromTxtDt)(result.dt_txt).hours)) {
-            result = i;
-        }
-        else if (curHour > 12 &&
-            (result === undefined ||
-                curHour < +(0, dateConverter_1.getCurrentTimeFromTxtDt)(result.dt_txt).hours)) {
-            result = i;
-        }
-    });
-    console.log(result);
-    return result;
-}
-exports.getMainDataOfADayArr = getMainDataOfADayArr;
+exports.infoBlockPush = infoBlockPush;
 
 
 /***/ }),
@@ -598,32 +528,32 @@ exports.getMainDataOfADayArr = getMainDataOfADayArr;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getCurrentTimeFromTxtDt = exports.getTimeOfDay = exports.getCurrentTime = exports.convertUnixToRegular = void 0;
 function convertUnixToRegular(unixTimestamp) {
-    var date = new Date(unixTimestamp * 1000);
-    var year = date.getFullYear();
-    var month = String(date.getMonth() + 1).padStart(2, "0");
-    var day = String(date.getDate()).padStart(2, "0");
-    var hours = String(date.getHours()).padStart(2, "0");
-    var minutes = String(date.getMinutes()).padStart(2, "0");
-    var seconds = String(date.getSeconds()).padStart(2, "0");
-    var formattedDate = "".concat(year, "-").concat(month, "-").concat(day, " ").concat(hours, ":").concat(minutes, ":").concat(seconds);
+    const date = new Date(unixTimestamp * 1000);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+    const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
     return {
-        year: year,
-        month: month,
-        day: day,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds,
-        formattedDate: formattedDate,
+        year,
+        month,
+        day,
+        hours,
+        minutes,
+        seconds,
+        formattedDate,
     };
 }
 exports.convertUnixToRegular = convertUnixToRegular;
 function getCurrentTime() {
-    var currentDate = new Date();
-    var hours = String(currentDate.getHours()).padStart(2, "0");
-    var minutes = String(currentDate.getMinutes()).padStart(2, "0");
-    var seconds = String(currentDate.getSeconds()).padStart(2, "0");
-    var curMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
-    var day = currentDate.getDate();
+    const currentDate = new Date();
+    const hours = String(currentDate.getHours()).padStart(2, "0");
+    const minutes = String(currentDate.getMinutes()).padStart(2, "0");
+    const seconds = String(currentDate.getSeconds()).padStart(2, "0");
+    const curMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const day = currentDate.getDate();
     return {
         hour: +hours,
         minutes: +minutes,
@@ -634,9 +564,9 @@ function getCurrentTime() {
 }
 exports.getCurrentTime = getCurrentTime;
 function getTimeOfDay(curTime, sunrise, sunset) {
-    var currentTimestamp = curTime.hour * 3600 + curTime.minutes * 60 + curTime.seconds;
-    var sunriseTimestamp = sunrise.hour * 3600 + sunrise.minutes * 60 + sunrise.seconds;
-    var sunsetTimestamp = sunset.hour * 3600 + sunset.minutes * 60 + sunset.seconds;
+    const currentTimestamp = curTime.hour * 3600 + curTime.minutes * 60 + curTime.seconds;
+    const sunriseTimestamp = sunrise.hour * 3600 + sunrise.minutes * 60 + sunrise.seconds;
+    const sunsetTimestamp = sunset.hour * 3600 + sunset.minutes * 60 + sunset.seconds;
     if (currentTimestamp >= sunriseTimestamp &&
         currentTimestamp < sunsetTimestamp) {
         return "day";
@@ -647,23 +577,23 @@ function getTimeOfDay(curTime, sunrise, sunset) {
 }
 exports.getTimeOfDay = getTimeOfDay;
 function getCurrentTimeFromTxtDt(date) {
-    var _a = date.split(" "), datePart = _a[0], timePart = _a[1];
-    var _b = datePart.split("-"), year = _b[0], month = _b[1], day = _b[2];
-    var _c = timePart.split(":"), hours = _c[0], minutes = _c[1], seconds = _c[2];
+    const [datePart, timePart] = date.split(" ");
+    const [year, month, day] = datePart.split("-");
+    const [hours, minutes, seconds] = timePart.split(":");
     if (hours || minutes || seconds) {
         return {
-            hours: hours,
-            minutes: minutes,
-            seconds: seconds,
+            hours,
+            minutes,
+            seconds,
             fulltime: [hours, minutes, seconds],
-            day: day,
-            month: month,
-            year: year,
+            day,
+            month,
+            year,
             fullDate: [year, month, day],
         };
     }
     else {
-        return { day: day, month: month, year: year };
+        return { day, month, year };
     }
 }
 exports.getCurrentTimeFromTxtDt = getCurrentTimeFromTxtDt;
@@ -1029,6 +959,156 @@ exports.mockForecast = {
     },
 };
 
+
+/***/ }),
+
+/***/ "./src/images/cloud.png":
+/*!******************************!*\
+  !*** ./src/images/cloud.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "28696bc6a24333b4bace.png";
+
+/***/ }),
+
+/***/ "./src/images/default.png":
+/*!********************************!*\
+  !*** ./src/images/default.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "132ec63df912b4595d9e.png";
+
+/***/ }),
+
+/***/ "./src/images/icons/cloudy_moon.png":
+/*!******************************************!*\
+  !*** ./src/images/icons/cloudy_moon.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "7eeb80cbb8de54a78f37.png";
+
+/***/ }),
+
+/***/ "./src/images/icons/cloudy_sun.svg":
+/*!*****************************************!*\
+  !*** ./src/images/icons/cloudy_sun.svg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "aaebc45bfa203e714c2b.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/moon.svg":
+/*!***********************************!*\
+  !*** ./src/images/icons/moon.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "bbb6f56ea113719a337c.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/over_cloudy_sun.svg":
+/*!**********************************************!*\
+  !*** ./src/images/icons/over_cloudy_sun.svg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b11b7442638744a53443.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/rainy.svg":
+/*!************************************!*\
+  !*** ./src/images/icons/rainy.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "12015c26c0177596545c.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/snowy.svg":
+/*!************************************!*\
+  !*** ./src/images/icons/snowy.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "8d8355dc0f5939434b43.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/sunny.svg":
+/*!************************************!*\
+  !*** ./src/images/icons/sunny.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "4ff7de3a10b5efcaa94e.svg";
+
+/***/ }),
+
+/***/ "./src/images/icons/thunder.svg":
+/*!**************************************!*\
+  !*** ./src/images/icons/thunder.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "bc60bc4a2389537d003c.svg";
+
+/***/ }),
+
+/***/ "./src/images/moon.png":
+/*!*****************************!*\
+  !*** ./src/images/moon.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "8ed434258fff2daa4a00.png";
+
+/***/ }),
+
+/***/ "./src/images/rain.png":
+/*!*****************************!*\
+  !*** ./src/images/rain.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cb98291f4d28bf89ccf2.png";
+
+/***/ }),
+
+/***/ "./src/images/snow.png":
+/*!*****************************!*\
+  !*** ./src/images/snow.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "607a41cd87194aaf5220.png";
+
+/***/ }),
+
+/***/ "./src/images/sun.png":
+/*!****************************!*\
+  !*** ./src/images/sun.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "f8d02b59d67e0ea7d62b.png";
+
+/***/ }),
+
+/***/ "./src/images/thunder.png":
+/*!********************************!*\
+  !*** ./src/images/thunder.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "78230572a5b62ef0f0d6.png";
 
 /***/ }),
 
@@ -4303,18 +4383,6 @@ module.exports = axios;
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -4325,11 +4393,6 @@ module.exports = axios;
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -4349,64 +4412,12 @@ module.exports = axios;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-var exports = __webpack_exports__;
-/*!**********************!*\
-  !*** ./src/index.ts ***!
-  \**********************/
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-__webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
-__webpack_require__(/*! ./scss/index.scss */ "./src/scss/index.scss");
-// import './scss/blocks/main.scss';
-var api_1 = __webpack_require__(/*! ./utils/api */ "./src/utils/api.ts");
-var constants_1 = __webpack_require__(/*! ./utils/constants */ "./src/utils/constants.ts");
-var dateConverter_1 = __webpack_require__(/*! ./utils/dateConverter */ "./src/utils/dateConverter.ts");
-var dataHandlers_1 = __webpack_require__(/*! ./utils/dataHandlers */ "./src/utils/dataHandlers.ts");
-var actualImages_1 = __webpack_require__(/*! ./utils/actualImages */ "./src/utils/actualImages.ts");
-var forecastCard_1 = __webpack_require__(/*! ./components/forecastCard */ "./src/components/forecastCard.ts");
-(0, api_1.getData)().then(function (data) {
-    var typeOfWeather = data.weather[0];
-    constants_1.city.textContent = data.name;
-    constants_1.temp.textContent = (0, constants_1.withDegrees)(data.main.temp);
-    constants_1.typeOfWthr.textContent = "".concat(typeOfWeather.description);
-    constants_1.feelsLike.textContent = (0, constants_1.withDegrees)(data.main.feels_like);
-    var sunrise = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunrise);
-    var sunset = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunset);
-    var timeOfday = (0, dateConverter_1.getTimeOfDay)((0, dateConverter_1.getCurrentTime)(), {
-        hour: +sunrise.hours,
-        minutes: +sunrise.minutes,
-        seconds: +sunrise.seconds,
-    }, {
-        hour: +sunset.hours,
-        minutes: +sunset.minutes,
-        seconds: +sunset.seconds,
-    });
-    if (timeOfday === "night") {
-        constants_1.body.style.backgroundColor = "#080D30";
-    }
-    constants_1.typeOfWthrImg.src = (0, actualImages_1.getCurImageWeather)(typeOfWeather.main, timeOfday);
-    constants_1.typeOfWthrImg.alt = typeOfWeather.description;
-    constants_1.decorateImage.src = (0, actualImages_1.getActualDecorateImage)(typeOfWeather.main, (0, dateConverter_1.getCurrentTime)(), timeOfday);
-});
-(0, api_1.getForecastData)().then(function (data) {
-    var list = data.list;
-    (0, dataHandlers_1.getTwentyFourHoursData)(list).forEach(function (i) {
-        constants_1.hoursForecast.append((0, forecastCard_1.getForecastCard)(i));
-    });
-    (0, dataHandlers_1.divideIntoDaysData)(list)
-        .map(function (i) {
-        return (0, dataHandlers_1.getMainDataOfADayArr)(i.data);
-    })
-        .forEach(function (i) {
-        constants_1.forecast.append((0, forecastCard_1.getForecastCard)(i, "day"));
-    });
-});
-
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=bundle.js.map

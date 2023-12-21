@@ -8,8 +8,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap"
     />
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2938/2938130.png" />
-  <script defer src="bundle.js"></script><link href="main.8e77365057fd005e5eff.css" rel="stylesheet"></head>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2938/2938130.png"
+    />
+  <script defer src="bundle.js"></script><link href="main.fe2c3e686ec27f75e5ae.css" rel="stylesheet"></head>
   <body>
     <!-- <h1 class="title">Weather</h1> -->
     <main class="main">
@@ -27,10 +30,28 @@
           <img class="decorate" src="#" alt="Погода" />
         </div>
       </div>
+      <div class="additional-info">
+        <button class="btn">
+          <p>Дополнительно</p>
+          <img
+            src="0f8be1e30aa0bc6b06db.png"
+            alt="Открыть"
+            class="icon-arrow"
+          />
+        </button>
+        <div class="info">
+          <p>Давление: <span class="pressure"></span></p>
+          <p>Влажность: <span class="humidity"></span></p>
+          <p>Видимость: <span class="visibility"></span></p>
+          <p>Скорость ветра: <span class="speed"></span> м/c</p>
+          <p>Рассвет: <span class="sunrise"></span></p>
+          <p>Закат: <span class="sunset"></span></p>
+        </div>
+      </div>
     </main>
     <section class="forecast-hours">
       <div class="forecast-hours-block block cards-wrapper">
-        <template class="template-hours-forecast-card">
+        <template class="template-forecast-card">
           <article class="card">
             <img src="#" alt="Тип погоды" class="img" />
             <h3 class="title"></h3>
@@ -50,6 +71,31 @@
               <p class="subtitle"></p>
             </article>
           </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="popups">
+      <div class="popup-daily-wrap popup-wrap">
+        <div class="popup-daily popup">
+          <img
+            class="close-icon"
+            src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
+            alt="Закрыть"
+          />
+          <h2 class="title"></h2>
+          <div class="data cards-wrapper"></div>
+        </div>
+      </div>
+      <div class="popup-hourly-wrap popup-wrap">
+        <div class="popup-hourly popup">
+          <img
+            class="close-icon"
+            src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
+            alt="Закрыть"
+          />
+          <h2 class="title"></h2>
+          <div class="data"></div>
         </div>
       </div>
     </section>
