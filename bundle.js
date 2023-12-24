@@ -233,7 +233,7 @@ const actualImages_1 = __webpack_require__(/*! ./utils/actualImages */ "./src/ut
 const forecastCard_1 = __webpack_require__(/*! ./components/forecastCard */ "./src/components/forecastCard.ts");
 const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast */ "./src/components/forecast.ts"));
 // import icon from './images/icons/arrow.png';
-(0, api_1.getData)().then((data) => {
+(0, api_1.getMockData)().then((data) => {
     const typeOfWeather = data.weather[0];
     constants_1.city.textContent = data.name;
     constants_1.temp.textContent = (0, constants_1.withDegrees)(data.main.temp);
@@ -241,15 +241,20 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
     constants_1.feelsLike.textContent = (0, constants_1.withDegrees)(data.main.feels_like);
     const sunrise = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunrise);
     const sunset = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunset);
-    const timeOfday = (0, dateConverter_1.getTimeOfDay)((0, dateConverter_1.getCurrentTime)(), {
-        hour: +sunrise.hours,
-        minutes: +sunrise.minutes,
-        seconds: +sunrise.seconds,
-    }, {
-        hour: +sunset.hours,
-        minutes: +sunset.minutes,
-        seconds: +sunset.seconds,
-    });
+    // const timeOfday = getTimeOfDay(
+    //   getCurrentTime(),
+    //   {
+    //     hour: +sunrise.hours,
+    //     minutes: +sunrise.minutes,
+    //     seconds: +sunrise.seconds,
+    //   },
+    //   {
+    //     hour: +sunset.hours,
+    //     minutes: +sunset.minutes,
+    //     seconds: +sunset.seconds,
+    //   }
+    // );
+    const timeOfday = 'night';
     if (timeOfday === "night") {
         constants_1.body.style.backgroundColor = "#080D30";
         console.log(constants_1.addInfoBtn);
@@ -258,7 +263,7 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
     constants_1.typeOfWthrImg.src = (0, actualImages_1.getCurImageWeather)(typeOfWeather.main, timeOfday);
     constants_1.typeOfWthrImg.alt = typeOfWeather.description;
     constants_1.decorateImage.src = (0, actualImages_1.getActualDecorateImage)(typeOfWeather.main, (0, dateConverter_1.getCurrentTime)(), timeOfday);
-    console.log(data);
+    // console.log(data);
     constants_1.addInfoBtn.addEventListener("click", () => {
         if (!constants_1.infoBlockAdditional.classList.contains("info_active")) {
             if (constants_1.infoBlockAdditional.classList.contains("info_disactive")) {
@@ -281,7 +286,7 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
         }
     });
 });
-(0, api_1.getForecastData)().then((data) => {
+(0, api_1.getForecastMockData)().then((data) => {
     const forecast = new forecast_1.default(data.list);
     forecast.getDataForHourlyForecast().forEach((item) => {
         const card = new forecastCard_1.ForecastCard(item).render();
@@ -315,7 +320,11 @@ const getCurImageWeather = (weather, currentTime = "day") => {
             return (currentTime =  true ? constants_1.getIcons.clear : 0);
         }
         case "Clouds": {
-            return (currentTime =  true ? constants_1.getIcons.cloudySun : 0);
+            // console.log(currentTime)
+            const cur = (currentTime =  true
+                ? constants_1.getIcons.cloudySun
+                : 0);
+            return cur;
         }
         case "Drizzle": {
             return constants_1.getIcons.rain;

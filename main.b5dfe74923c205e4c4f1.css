@@ -449,10 +449,6 @@ button {
 }
 @media screen and (max-width: 475px) {
   .main .main-info-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -474,6 +470,7 @@ button {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 15px;
+  z-index: 3;
 }
 @media screen and (max-width: 667px) {
   .main .main-info-wrap .main-info {
@@ -514,15 +511,27 @@ button {
   -ms-flex-item-align: center;
       align-self: center;
 }
+@media screen and (min-width: 882px) {
+  .main .main-info-wrap .decorate-wrap {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 881px) {
+  .main .main-info-wrap .decorate-wrap {
+    max-width: 30%;
+  }
+}
 @media screen and (max-width: 475px) {
   .main .main-info-wrap .decorate-wrap {
-    max-width: 80%;
+    max-width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     z-index: 0;
     opacity: 0.5;
-    position: absolute;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
     pointer-events: none;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 .main .main-info-wrap .decorate-wrap img {
@@ -589,12 +598,12 @@ button {
 .additional-info .btn:hover {
   color: #b174ca;
   border-bottom: 2px solid aqua;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .additional-info .btn:hover .icon-arrow {
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .additional-info .info {
   display: none;
@@ -721,13 +730,13 @@ button {
           justify-content: baseline;
   gap: 5px;
   z-index: 1;
-  -webkit-animation: animFrom 1s linear;
-          animation: animFrom 1s linear;
+  -webkit-animation: animFrom 0.4s linear;
+          animation: animFrom 0.4s linear;
 }
 .additional-info .info_disactive {
   z-index: 1;
-  -webkit-animation: animTo 1s linear;
-          animation: animTo 1s linear;
+  -webkit-animation: animTo 0.4s linear;
+          animation: animTo 0.4s linear;
   -webkit-transform: translateY(-180px);
           transform: translateY(-180px);
 }
@@ -970,6 +979,12 @@ body span {
 .popups .popup-wrap .popup .close-icon:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 475px) {
+  .popups .popup-wrap .popup .close-icon {
+    right: 0;
+    left: calc(100% - 20px);
+  }
+}
 .popups .popup-wrap .popup .cards-wrapper {
   background: #1b58c2;
   padding: 15px;
@@ -1011,4 +1026,4 @@ body span {
   gap: 5px;
 }
 
-/*# sourceMappingURL=main.fe2c3e686ec27f75e5ae.css.map*/
+/*# sourceMappingURL=main.b5dfe74923c205e4c4f1.css.map*/
