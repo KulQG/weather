@@ -241,20 +241,16 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
     constants_1.feelsLike.textContent = (0, constants_1.withDegrees)(data.main.feels_like);
     const sunrise = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunrise);
     const sunset = (0, dateConverter_1.convertUnixToRegular)(data.sys.sunset);
-    // const timeOfday = getTimeOfDay(
-    //   getCurrentTime(),
-    //   {
-    //     hour: +sunrise.hours,
-    //     minutes: +sunrise.minutes,
-    //     seconds: +sunrise.seconds,
-    //   },
-    //   {
-    //     hour: +sunset.hours,
-    //     minutes: +sunset.minutes,
-    //     seconds: +sunset.seconds,
-    //   }
-    // );
-    const timeOfday = 'night';
+    const timeOfday = (0, dateConverter_1.getTimeOfDay)((0, dateConverter_1.getCurrentTime)(), {
+        hour: +sunrise.hours,
+        minutes: +sunrise.minutes,
+        seconds: +sunrise.seconds,
+    }, {
+        hour: +sunset.hours,
+        minutes: +sunset.minutes,
+        seconds: +sunset.seconds,
+    });
+    // const timeOfday = 'night'
     if (timeOfday === "night") {
         constants_1.body.style.backgroundColor = "#080D30";
         console.log(constants_1.addInfoBtn);
