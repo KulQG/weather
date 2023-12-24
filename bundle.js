@@ -233,7 +233,7 @@ const actualImages_1 = __webpack_require__(/*! ./utils/actualImages */ "./src/ut
 const forecastCard_1 = __webpack_require__(/*! ./components/forecastCard */ "./src/components/forecastCard.ts");
 const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast */ "./src/components/forecast.ts"));
 // import icon from './images/icons/arrow.png';
-(0, api_1.getMockData)().then((data) => {
+(0, api_1.getData)().then((data) => {
     const typeOfWeather = data.weather[0];
     constants_1.city.textContent = data.name;
     constants_1.temp.textContent = (0, constants_1.withDegrees)(data.main.temp);
@@ -286,7 +286,7 @@ const forecast_1 = __importDefault(__webpack_require__(/*! ./components/forecast
         }
     });
 });
-(0, api_1.getForecastMockData)().then((data) => {
+(0, api_1.getForecastData)().then((data) => {
     const forecast = new forecast_1.default(data.list);
     forecast.getDataForHourlyForecast().forEach((item) => {
         const card = new forecastCard_1.ForecastCard(item).render();
