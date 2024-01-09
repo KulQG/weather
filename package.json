@@ -7,7 +7,7 @@
     "build": "webpack",
     "dev": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist && vercel --prod"
   },
   "author": "",
   "license": "ISC",
@@ -36,8 +36,10 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
+    "@types/chart.js": "^2.9.41",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.1",
+    "chart.js": "^4.4.1",
     "normalize.css": "^8.0.1"
   }
 }

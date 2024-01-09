@@ -42,6 +42,7 @@ export const decorateImage = findSelector("decorate") as HTMLImageElement;
 const addInfoBlock = findSelector("additional-info")!;
 export const addInfoBtn: HTMLElement = addInfoBlock.querySelector(".btn")!;
 export const infoBlockAdditional = addInfoBlock.querySelector(".info")!;
+export const arrowAddIcon = addInfoBtn.querySelector('.icon-arrow')!
 
 export const hoursForecast = findSelector("forecast-hours-block");
 
@@ -86,4 +87,30 @@ export const getImages = {
 
 export function infoBlockPush (className: string, data: any) {
   infoBlockAdditional.querySelector(`.${className}`)!.textContent = String(data);
+}
+
+export const optionsForChart = {
+  scales: {
+    x: {
+      ticks: {
+        color: 'white', // цвет меток по оси X
+        font: {
+          size: 14, // размер шрифта меток по оси X
+        },
+      },
+    },
+    y: {
+      ticks: {
+        color: 'white', // цвет меток по оси Y
+        font: {
+          size: 14, // размер шрифта меток по оси Y
+        },
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    }
+  }
 }

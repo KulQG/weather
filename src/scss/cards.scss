@@ -16,7 +16,7 @@
 }
 
 .cards-wrapper {
-  @include flex($gap: $cards-gap);
+  @include flex($gap: $cards-gap, $align: center);
   overflow-x: auto;
   overflow-y: hidden;
 
@@ -35,10 +35,8 @@
   &::-webkit-scrollbar {
     $height: 5px;
     height: $height;
-    // width: -15px;
     border-radius: 15px;
     margin-top: -$height;
-    background-color: $bc;
     opacity: 0;
     position: relative;
     top: 5px;
@@ -47,27 +45,52 @@
     }
   }
 
+  &::-webkit-scrollbar-track {
+    border-radius: 0 15px 15px 0;
+  }
+
   &::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: white;
     border-radius: 15px;
+  }
+
+  @media screen and (max-width: $s-width-content) {
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 }
 
 .forecast-hours {
   @include padding;
+  max-width: 860px;
+  @include flex($direction: column, $gap: 30px);
 }
 
 .blocks {
   @extend %maxWidth;
-  @include padding;
-  @include flex(row, baseline, baseline, 30px);
+  @include flex(row, flex-start, baseline, 30px);
   flex-wrap: wrap;
 
   .forecast {
-    @include flex(column, center, center, 10px);
+    @include padding;
+    @include flex($direction: column, $gap: 30px);
 
-    .card {
-      cursor: pointer;
+    .forecast-block {
+      @include flex($gap: $cards-gap, $align: center);
+      max-width: 470px;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      .card {
+        cursor: pointer;
+      }
     }
   }
+}
+
+.line {
+  width: 100%;
+  height: 300px;
+  // max-width: 1070px;
 }

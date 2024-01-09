@@ -1,5 +1,6 @@
 $color: white;
 $bc: #1b58c2;
+// $bc: #a446d0;
 $cards-gap: 30px;
 
 $m-width-content: 881px;
@@ -17,6 +18,10 @@ $xs-width-content: 475px;
   @media screen and (max-width: $s-width-content) {
     font-size: 4em;
   }
+}
+
+%page-m-w {
+  max-width: 1800px;
 }
 
 @mixin padding($type: "def") {
@@ -68,7 +73,7 @@ $xs-width-content: 475px;
 
 @mixin bodyGap {
   @media screen and (min-width: $m-width-content) {
-    gap: 50px; 
+    gap: 50px;
   }
 
   @media screen and (max-width: $m-width-content) {
@@ -83,4 +88,3 @@ $xs-width-content: 475px;
 %maxWidth {
   width: 100%;
 }
-

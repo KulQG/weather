@@ -50,7 +50,7 @@ export class ForecastCardDaily extends ForecastCard {
     super(data);
     this.dayInfo = dayInfo;
     this.getEventListeners();
-    console.log(dayInfo)
+    // console.log(dayInfo)
   }
 
   getEventListeners() {

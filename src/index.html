@@ -16,89 +16,93 @@
   <body>
     <!-- <h1 class="title">Weather</h1> -->
     <main class="main">
-      <div class="main-info-wrap">
-        <div class="main-info">
-          <div class="text-info">
-            <p class="city">Нижний Новгород</p>
-            <h1 class="celsius">-12</h1>
-            <p>Ощущается как <span class="feels-like">-10</span></p>
-            <p class="type-of-weather">Солнечно</p>
+      <div class="main-info-block">
+        <div class="main-info-wrap">
+          <div class="main-info">
+            <div class="text-info">
+              <p class="city">Нижний Новгород</p>
+              <h1 class="celsius"></h1>
+              <p>Ощущается как <span class="feels-like"></span></p>
+              <p class="type-of-weather"></p>
+            </div>
+            <img class="type-of_wthr_img" src="#" alt="Тип погоды" />
           </div>
-          <img class="type-of_wthr_img" src="#" alt="Тип погоды" />
+          <div class="decorate-wrap">
+            <img class="decorate" src="#" alt="Погода" />
+          </div>
         </div>
-        <div class="decorate-wrap">
-          <img class="decorate" src="#" alt="Погода" />
-        </div>
-      </div>
-      <div class="additional-info">
-        <button class="btn">
-          <p>Дополнительно</p>
-          <img
-            src="./images/icons/arrow.png"
-            alt="Открыть"
-            class="icon-arrow"
-          />
-        </button>
-        <div class="info">
-          <p>Давление: <span class="pressure"></span></p>
-          <p>Влажность: <span class="humidity"></span></p>
-          <p>Уровень моря: <span class="sea_level"></span></p>
-          <p>Видимость: <span class="visibility"></span></p>
-          <p>Скорость ветра: <span class="speed"></span> м/c</p>
-          <p>Рассвет: <span class="sunrise"></span></p>
-          <p>Закат: <span class="sunset"></span></p>
+        <div class="additional-info">
+          <button class="btn">
+            <p>Дополнительно</p>
+            <img
+              src="./images/icons/arrow.png"
+              alt="Открыть"
+              class="icon-arrow"
+            />
+          </button>
+          <div class="info">
+            <p>Давление: <span class="pressure"></span></p>
+            <p>Влажность: <span class="humidity"></span></p>
+            <p>Видимость: <span class="visibility"></span></p>
+            <p>Скорость ветра: <span class="speed"></span> м/c</p>
+            <p>Рассвет: <span class="sunrise"></span></p>
+            <p>Закат: <span class="sunset"></span></p>
+          </div>
         </div>
       </div>
-    </main>
-    <section class="forecast-hours">
-      <div class="forecast-hours-block block cards-wrapper">
-        <template class="template-forecast-card">
-          <article class="card">
-            <img src="#" alt="Тип погоды" class="img" />
-            <h3 class="title"></h3>
-            <p class="subtitle"></p>
-          </article>
-        </template>
-      </div>
-    </section>
-    <section class="blocks">
-      <div class="forecast block">
-        <h2 class="section-title">Прогноз на 5 дней</h2>
-        <div class="forecast-block cards-wrapper">
-          <template class="template-forecast-card">
-            <article class="card">
-              <img src="#" alt="Тип погоды" class="img" />
-              <h3 class="title"></h3>
-              <p class="subtitle"></p>
-            </article>
-          </template>
+      <section class="blocks">
+        <div class="forecast-hours">
+          <div class="forecast-hours-block cards-wrapper block">
+            <h2 class="title">Прогноз на сутки</h2>
+            <template class="template-forecast-card">
+              <article class="card">
+                <img src="#" alt="Тип погоды" class="img" />
+                <h3 class="title"></h3>
+                <p class="subtitle"></p>
+              </article>
+            </template>
+          </div>
+          <div class="forecast-hours-line line"><canvas id="hours"></canvas></div>
         </div>
-      </div>
-    </section>
+        <div class="forecast">
+          <div class="forecast-block cards-wrapper block">
+            <h2 class="section-title">Прогноз на 5 дней</h2>
+            <template class="template-forecast-card">
+              <article class="card">
+                <img src="#" alt="Тип погоды" class="img" />
+                <h3 class="title"></h3>
+                <p class="subtitle"></p>
+              </article>
+            </template>
+          </div>
+          <div class="forecast-line line"><canvas id="days"></canvas></div>
+        </div>
+      </section>
 
-    <section class="popups">
-      <div class="popup-daily-wrap popup-wrap">
-        <div class="popup-daily popup">
-          <img
-            class="close-icon"
-            src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
-            alt="Закрыть"
-          />
-          <h2 class="title"></h2>
-          <div class="data cards-wrapper"></div>
+      <section class="popups">
+        <div class="popup-daily-wrap popup-wrap">
+          <div class="popup-daily popup">
+            <img
+              class="close-icon"
+              src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
+              alt="Закрыть"
+            />
+            <h2 class="title"></h2>
+            <div class="data cards-wrapper"></div>
+          </div>
         </div>
-      </div>
-      <div class="popup-hourly-wrap popup-wrap">
-        <div class="popup-hourly popup">
-          <img
-            class="close-icon"
-            src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
-            alt="Закрыть"
-          />
-          <h2 class="title"></h2>
-          <div class="data"></div>
+        <div class="popup-hourly-wrap popup-wrap">
+          <div class="popup-hourly popup">
+            <img
+              class="close-icon"
+              src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png"
+              alt="Закрыть"
+            />
+            <h2 class="title"></h2>
+            <div class="data"></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

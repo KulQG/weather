@@ -10,7 +10,11 @@ export const getCurImageWeather = (
       return (currentTime = "day" ? getIcons.clear : getIcons.clearNight);
     }
     case "Clouds": {
-      return (currentTime = "day" ? getIcons.cloudySun : getIcons.cloudyNight);
+      // console.log(currentTime)
+      const cur = (currentTime = "day"
+        ? getIcons.cloudySun
+        : getIcons.cloudyNight);
+      return cur;
     }
     case "Drizzle": {
       return getIcons.rain;

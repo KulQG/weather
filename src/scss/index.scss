@@ -24,7 +24,7 @@ body {
     @extend %p;
   }
 
-  @include flex($direction: column, $justify: center);
+  @include flex($direction: column, $justify: center, $align: center);
   @include bodyGap;
 }
 
@@ -35,7 +35,12 @@ button {
 }
 
 .main {
-  @extend %maxWidth;
+  @extend %page-m-w;
+  width: 100%
+}
+
+.main-info-block {
+  @extend %page-m-w;
   @include padding("main");
   overflow: hidden;
   @include flex(column, center, baseline, 50px);
@@ -47,12 +52,13 @@ button {
     @include flex($align: center, $justify: space-between, $gap: 10px);
 
     @media screen and (max-width: $xs-width-content) {
-      flex-direction: column;
+      // flex-direction: column;
       align-items: baseline;
       gap: 20px;
     }
     .main-info {
       @include flex(row, center, flex-start, 15px);
+      z-index: 3;
       @media screen and (max-width: $s-width-content) {
         gap: 0;
       }
@@ -81,13 +87,21 @@ button {
       max-width: 30%;
       align-self: center;
 
+      @media screen and (min-width: ($m-width-content + 1px) ) {
+        max-width: 30%;
+      }
+
+      @media screen and (max-width: $m-width-content) {
+        max-width: 30%;
+      }
+
       @media screen and (max-width: $xs-width-content) {
-        max-width: 80%;
+        max-width: 50%;
+        flex: 1;
         z-index: 0;
         opacity: 0.5;
-        position: absolute;
-        filter: blur(2px);
         pointer-events: none;
+        align-self: flex-end;
       }
 
       img {
@@ -103,7 +117,7 @@ button {
   overflow: hidden;
   @include flex($direction: column, $gap: 10px);
 
-  .btn { 
+  .btn {
     position: relative;
     z-index: 3;
     @include flex($gap: 8px, $align: center);
@@ -114,19 +128,23 @@ button {
     transition: 0.5s linear;
     cursor: pointer;
 
-    img {
+    .icon-arrow {
       width: 15px;
       transition: 0.5s linear;
+      transform: rotate(0deg);
+
+      &_active {
+        transform: rotate(-180deg);
+      }
     }
 
     &:hover {
       color: #b174ca;
       border-bottom: 2px solid aqua;
-      transition: 0.5s linear;
+      transition: 0.2s linear;
 
-      img {
-        transition: 0.4s linear;
-        transform: translateY(4px);
+      .icon-arrow {
+        transition: 0.2s linear;
       }
     }
   }
@@ -137,24 +155,31 @@ button {
         transform: translateY(-150px);
         z-index: 1;
       }
-    
+
       to {
         transform: translateY(0);
         z-index: 1;
       }
-    };
+    }
 
     @keyframes animTo {
       from {
+        @include flex($direction: column, $gap: 5px);
         transform: translateY(0);
         z-index: 1;
       }
-    
-      to {
+
+      99% {
+        @include flex($direction: column, $gap: 5px);
         transform: translateY(-150px);
         z-index: 1;
       }
-    };
+
+      to {
+        position: static;
+        display: none;
+      }
+    }
 
     display: none;
     z-index: 1;
@@ -163,15 +188,14 @@ button {
     &_active {
       @include flex($direction: column, $gap: 5px);
       z-index: 1;
-      animation: animFrom 1s linear
-    };
+      animation: animFrom .4s linear;
+    }
 
     &_disactive {
-      @include flex($direction: column, $gap: 5px);
       z-index: 1;
-      animation: animTo 1s linear;
+      animation: animTo .4s linear;
       transform: translateY(-180px);
-    };
+    }
   }
 }
 

@@ -22,6 +22,7 @@ import {
   addInfoBtn,
   infoBlockAdditional,
   infoBlockPush,
+  arrowAddIcon,
 } from "./utils/constants";
 import {
   convertUnixToRegular,
@@ -61,8 +62,11 @@ getData().then((data: IData) => {
     }
   );
 
+  // const timeOfday = 'night'
+
   if (timeOfday === "night") {
     body!.style.backgroundColor = "#080D30";
+    console.log(addInfoBtn);
     addInfoBtn.style.backgroundColor = "#080D30";
   }
 
@@ -75,16 +79,19 @@ getData().then((data: IData) => {
     timeOfday
   );
 
+  // console.log(data);
+
   addInfoBtn.addEventListener("click", () => {
     if (!infoBlockAdditional.classList.contains("info_active")) {
       if (infoBlockAdditional.classList.contains("info_disactive")) {
         infoBlockAdditional.classList.remove("info_disactive");
+        arrowAddIcon.classList.remove("icon-arrow_active");
       }
       infoBlockAdditional.classList.add("info_active");
+      arrowAddIcon.classList.add("icon-arrow_active");
 
       infoBlockPush("pressure", data.main.pressure);
       infoBlockPush("humidity", data.main.humidity);
-      infoBlockPush("sea_level", data.main.sea_level);
       infoBlockPush("visibility", data.visibility);
       infoBlockPush("speed", data.wind.speed);
       infoBlockPush("sunrise", `${sunrise.hours}:${sunrise.minutes}`);
@@ -92,6 +99,7 @@ getData().then((data: IData) => {
     } else {
       infoBlockAdditional.classList.remove("info_active");
       infoBlockAdditional.classList.add("info_disactive");
+      arrowAddIcon.classList.remove("icon-arrow_active");
     }
   });
 });
